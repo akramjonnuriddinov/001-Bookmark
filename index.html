@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Bookmark</title>
     <!-- NORMALIZE -->
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- STYLES -->
@@ -39,7 +39,125 @@
         </div>
     </header>
 
-    
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__inner">
+                    <h1 class="hero__title">A Simple Bookmark Manager</h1>
+                    <p class="hero__text">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                    <div class="hero__btn-wrapper">
+                        <a class="button button-blue" href="#">Get it on Chrome</a>
+                        <a class="button button-grey" href="#">Get it on Firefox</a>
+                    </div>
+                </div>
+                <img class="hero__img change-img" src="img/hero-img.svg" alt="Hero img" width="578" height="385">
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="features home-page-section">
+            <div class="home-page-section__container container">
+                <div class="features__inner home-page-section__inner">
+                    <h2 class="features__title home-page-section__title">Features</h2>
+                    <p class="features__text home-page-section__text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+                </div>
+                <div class="carousel">
+                    <div class="carousel__inner">
+                        <button class="carousel__btn js-carousel__btn" type="button">Simple Bookmarking</button>
+                        <span class="carousel__line js-carousel__line"></span>
+                    </div>
+                    <div class="carousel__inner">
+                        <button class="carousel__btn js-carousel__btn" type="button">Speedy Searching</button>
+                        <span class="carousel__line js-carousel__line"></span>
+                    </div>
+                    <div class="carousel__inner">
+                        <button class="carousel__btn js-carousel__btn" type="button">Easy Sharing</button>
+                        <span class="carousel__line js-carousel__line"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta__container">
+                    <img class="cta__img" src="./img/cta-bg.svg" alt="CTA img" width="536" height="346">
+                    <div class="cta__inner">
+                        <h2 class="cta__title">Bookmark in one click</h2>
+                        <p class="cta__text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                        <a class="button button-blue" href="#">More info</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOWNLOAD -->
+        <section class="download home-page-section">
+            <div class="home-page-section__container container">
+                <div class="download__inner home-page-section__inner">
+                    <h2 class="download__title home-page-section__title">Download the extension</h2>
+                    <p class="download__text home-page-section__text">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+                </div>
+                <ul class="card">
+                    <li class="card__item">
+                        <img src="./img/chrome.svg" alt="Chrome Logo Img" class="card__img" width="102" height="100">
+                        <h3 class="card__title">Add to Chrome</h3>
+                        <p class="card__text">Minimum version 62</p>
+                        <a class="card__btn button button-blue" href="#">Add & Install Extension</a>
+                    </li>
+                    <li class="card__item">
+                        <img src="./img/firefox.svg" alt="Chrome Logo Img" class="card__img" width="102" height="100">
+                        <h3 class="card__title">Add to Firefox</h3>
+                        <p class="card__text">Minimum version 55</p>
+                        <a class="card__btn button button-blue" href="#">Add & Install Extension</a>
+                    </li>
+                    <li class="card__item">
+                        <img src="./img/opera.svg" alt="Chrome Logo Img" class="card__img" width="102" height="100">
+                        <h3 class="card__title">Add to Opera</h3>
+                        <p class="card__text">Minimum version 46</p>
+                        <a class="card__btn button button-blue" href="#">Add & Install Extension</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq home-page-section">
+            <div class="container">
+                <div class="faq__container">
+                    <div class="faq__inner home-page-section__inner">
+                        <h2 class="faq__title home-page-section__title">Frequently Asked Questions</h2>
+                        <p class="faq__text home-page-section__text">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion__item">
+                            <button class="accordion__btn js-accordion-btn" type="button">
+                                <span class="accardion__inner">
+                                    <h3 class="accordion__title">What is Bookmark?</h3>
+                                    <img class="accordion__icon" src="./img/accardion__icon.svg" alt="Accordion icon" width="16" heihgt="8">
+                                </span>
+                            </button>
+                            <p class="accordion__text js-accordion-text">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="accordion__item">
+                            <button class="accordion__btn js-accordion-btn" type="button">
+                                <span class="accardion__inner">
+                                    <h3 class="accordion__title">What is Bookmark?</h3>
+                                    <img class="accordion__icon" src="./img/accardion__icon.svg" alt="Accordion icon" width="16" heihgt="8">
+                                </span>
+                            </button>
+                            <p class="accordion__text js-accordion-text">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
     
     <script src="js/main.js"></script>
 </body>
