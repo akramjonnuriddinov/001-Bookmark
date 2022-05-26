@@ -63,6 +63,7 @@
                     <h2 class="features__title home-page-section__title">Features</h2>
                     <p class="features__text home-page-section__text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
                 </div>
+                <!-- CAROUSEL -->
                 <div class="carousel">
                     <div class="carousel__inner">
                         <button class="carousel__btn js-carousel__btn" type="button">Simple Bookmarking</button>
@@ -121,6 +122,7 @@
                         <a class="card__btn button button-blue" href="#">Add & Install Extension</a>
                     </li>
                     
+                    
                 </ul>
             </div>
         </section>
@@ -133,30 +135,71 @@
                         <h2 class="faq__title home-page-section__title">Frequently Asked Questions</h2>
                         <p class="faq__text home-page-section__text">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
                     </div>
+                    <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion__item">
                             <button class="accordion__btn js-accordion-btn" type="button">
                                 <span class="accardion__inner">
                                     <h3 class="accordion__title">What is Bookmark?</h3>
-                                    <img class="accordion__icon" src="./img/accardion__icon.svg" alt="Accordion icon" width="16" heihgt="8">
+                                    <svg class="accordion__icon js-accordion-icon" width="20" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m2 2 8 8 8-8" stroke="currentColor" stroke-width="3"/></svg>
                                 </span>
                             </button>
-                            <p class="accordion__text js-accordion-text">Lorem ipsum dolor sit amet.</p>
+                            <div class="accordion__text-wrapper js-accordion-text-wrapper">
+                                <p class="accordion__text js-accordion-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet..</p>
+                            </div>
                         </div>
                         <div class="accordion__item">
                             <button class="accordion__btn js-accordion-btn" type="button">
                                 <span class="accardion__inner">
-                                    <h3 class="accordion__title">What is Bookmark?</h3>
-                                    <img class="accordion__icon" src="./img/accardion__icon.svg" alt="Accordion icon" width="16" heihgt="8">
+                                    <h3 class="accordion__title">How can I request a new browser?</h3>
+                                    <svg class="accordion__icon js-accordion-icon" width="20" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m2 2 8 8 8-8" stroke="currentColor" stroke-width="3"/></svg>
                                 </span>
                             </button>
-                            <p class="accordion__text js-accordion-text">Lorem ipsum dolor sit amet.</p>
+                            <div class="accordion__text-wrapper js-accordion-text-wrapper">
+                                <p class="accordion__text js-accordion-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet..</p>
+                            </div>
                         </div>
+                        <div class="accordion__item">
+                            <button class="accordion__btn js-accordion-btn" type="button">
+                                <span class="accardion__inner">
+                                    <h3 class="accordion__title">Is there a mobile app?</h3>
+                                    <svg class="accordion__icon js-accordion-icon" width="20" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m2 2 8 8 8-8" stroke="currentColor" stroke-width="3"/></svg>
+                                </span>
+                            </button>
+                            <div class="accordion__text-wrapper js-accordion-text-wrapper">
+                                <p class="accordion__text js-accordion-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet..</p>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <button class="accordion__btn js-accordion-btn" type="button">
+                                <span class="accardion__inner">
+                                    <h3 class="accordion__title">What about other Chromium browsers?</h3>
+                                    <svg class="accordion__icon js-accordion-icon" width="20" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m2 2 8 8 8-8" stroke="currentColor" stroke-width="3"/></svg>
+                                </span>
+                            </button>
+                            <div class="accordion__text-wrapper js-accordion-text-wrapper">
+                                <p class="accordion__text js-accordion-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__btn-wrapper">
+                        <a class="button button-blue faq__btn" href="#">More Info</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- CONTACT -->
+        <section class="contact">
+            <div class="contact__container container">
+                <p class="contact__text">35,000+ ALREADY JOINED</p>
+                <h2 class="contact__title">Stay up-to-date with what we’re doing</h2>
+                <form action="https://echo.html/academy.ru" class="contact__form form" method="POST">
+                    <input class="contact__input" type="email" placeholder="Enter your email address" name="email" required>
+                    <button class="main-btn contact__btn button" type="submit">Contact Us</button>
+                </form>
+            </div>
+        </section>
     </main>
     
     <script src="js/main.js"></script>
