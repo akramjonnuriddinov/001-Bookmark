@@ -13,6 +13,11 @@ elCarouselBtn.forEach(function(item, index) {
     });
 });
 
+// CAROUSEL CHANGE
+const elCtaClick = document.getElementById('#cta-click');
+const elCtaSearch = document.getElementById('#cta-search');
+const elCtaShare = document.getElementById('#cta-share');
+const elCta = document.querySelectorAll('.cta');
 
 // -------------------------ACCORDION VARIABLE-------------------------
 const elAccordionBtn = document.querySelectorAll('.js-accordion-btn');
