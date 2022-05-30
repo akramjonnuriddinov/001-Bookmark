@@ -1,6 +1,11 @@
 // -------------------------CAROUSEL VARIABLE-------------------------
 const elCarouselBtn = document.querySelectorAll('.js-carousel__btn');
 const elCarouselLine = document.querySelectorAll('.js-carousel__line');
+// CAROUSEL CHANGE
+const elCtaClick = document.getElementById('#cta-click');
+const elCtaSearch = document.getElementById('#cta-search');
+const elCtaShare = document.getElementById('#cta-share');
+const elCta = document.querySelectorAll('.cta');
 
 // SHOW CAROUSEL LINE
 elCarouselBtn.forEach(function(item, index) {
@@ -10,14 +15,14 @@ elCarouselBtn.forEach(function(item, index) {
         });
 
         elCarouselLine[index].classList.add('carousel__line--show');
+        elCta.forEach(function(item, index) {
+            item.classList.add('cta--hide');
+        });
+        elCta[index].classList.remove('cta--hide');
     });
 });
 
-// CAROUSEL CHANGE
-const elCtaClick = document.getElementById('#cta-click');
-const elCtaSearch = document.getElementById('#cta-search');
-const elCtaShare = document.getElementById('#cta-share');
-const elCta = document.querySelectorAll('.cta');
+
 
 // -------------------------ACCORDION VARIABLE-------------------------
 const elAccordionBtn = document.querySelectorAll('.js-accordion-btn');
