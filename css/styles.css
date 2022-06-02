@@ -429,6 +429,9 @@ img {
     display: flex;
     flex-direction: column;
     width: 280px;
+    background-image: url('../img/card-item-bg.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 96px center;
 }
 
 .card__item:first-child {
@@ -624,15 +627,53 @@ img {
 
 .contact__form {
     display: flex;
+    align-items: flex-start;
 }
 
+
 .contact__input {
-    margin-right: 16px;
     padding: 10px 20px;
     border-radius: 5px;
     border: 1px solid transparent;
     width: 300px;
     display: inline-block;
+    height: 48px;
+    z-index: 5;
+}
+
+.contact__input-wrapper {
+    position: relative;
+    z-index: 555;
+    margin-right: 16px;
+}
+
+.contact__error-msg {
+    display: none;
+}
+
+.contact__input:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid var(--text-color-hover);
+    background-image: url(../img/error.svg);
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+}
+  
+.contact__input:not(:focus):not(:placeholder-shown):invalid + .contact__error-msg {
+    display: block;
+    position: absolute;
+    z-index: -555;
+    top: calc(100% - 4px);
+    font-weight: 500;
+    font-style: italic;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    padding: 6px 12px;
+    background-color: var(--text-color-hover);
+    color: #fff;
+    width: 300px;
+    border-radius: 0 0 5px 5px;
 }
 
 .contact__input::placeholder {

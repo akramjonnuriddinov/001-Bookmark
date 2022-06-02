@@ -221,9 +221,12 @@
             <div class="contact__container container">
                 <p class="contact__text">35,000+ ALREADY JOINED</p>
                 <h2 class="contact__title">Stay up-to-date with what we’re doing</h2>
-                <form action="https://echo.htmlacademy.ru" class="contact__form form" method="POST">
-                    <input class="contact__input" type="email" placeholder="Enter your email address" name="email" required>
-                    <button class="main-btn contact__btn button" type="submit">Contact Us</button>
+                <form class="contact__form js-form" action="https://echo.htmlacademy.ru" method="POST">
+                    <div class="contact__input-wrapper">
+                        <input class="contact__input" type="email" placeholder="Enter your email address" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" name="email" required>
+                        <span class="contact__error-msg">Whoops, make sure it’s an email</span>
+                    </div>
+                    <button class="main-btn contact__btn button js-contact-btn" type="submit">Contact Us</button>
                 </form>
             </div>
         </section>

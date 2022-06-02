@@ -36,7 +36,16 @@ elAccordionBtn.forEach(function(item, index) {
             item.classList.remove('accordion__text-wrapper--show');
         });
         
-        elAccordionText[index].classList.toggle('accordion__text-wrapper--show');
         elAccordionIcon[index].classList.toggle('accordion__icon--rotate');
+        if (elAccordionText[index].classList.contains('accordion__text-wrapper--show') == false) {
+            elAccordionText[index].classList.toggle('accordion__text-wrapper--show');
+        }
     });
 });
+
+// CONTACT VARIABLE
+const contactBtn = document.querySelector('.js-contact-btn');
+
+contactBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+})
