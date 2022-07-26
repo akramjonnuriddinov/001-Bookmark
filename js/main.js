@@ -23,7 +23,6 @@ elCarouselBtn.forEach(function(item, index) {
 });
 
 
-
 // -------------------------ACCORDION VARIABLE-------------------------
 const elAccordionBtn = document.querySelectorAll('.js-accordion-btn');
 const elAccordionText = document.querySelectorAll('.js-accordion-text-wrapper');
@@ -32,14 +31,8 @@ const elAccordionIcon = document.querySelectorAll('.js-accordion-icon')
 // SHOW ACCORDION TEXT
 elAccordionBtn.forEach(function(item, index) {
     item.addEventListener('click', function() {
-        elAccordionText.forEach(function (item){
-            item.classList.remove('accordion__text-wrapper--show');
-        });
-        
         elAccordionIcon[index].classList.toggle('accordion__icon--rotate');
-        if (elAccordionText[index].classList.contains('accordion__text-wrapper--show') == false) {
-            elAccordionText[index].classList.toggle('accordion__text-wrapper--show');
-        }
+        elAccordionText[index].classList.toggle('accordion__text-wrapper--show');
     });
 });
 

@@ -334,6 +334,10 @@ img {
     background-color: transparent;
 }
 
+.carousel__line:first-child {
+    background-color: var(--text-color-hover);
+}
+
 .carousel__line--show {
     background-color: var(--text-color-hover);
 }
