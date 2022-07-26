@@ -15,7 +15,7 @@ elCarouselBtn.forEach(function(item, index) {
         });
 
         elCarouselLine[index].classList.add('carousel__line--show');
-        elCta.forEach(function(item, index) {
+        elCta.forEach(function(item) {
             item.classList.add('cta--hide');
         });
         elCta[index].classList.remove('cta--hide');

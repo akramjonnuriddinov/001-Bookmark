@@ -334,9 +334,9 @@ img {
     background-color: transparent;
 }
 
-.carousel__line:first-child {
+/* .carousel__inner:first-child .carousel__line {
     background-color: var(--text-color-hover);
-}
+} */
 
 .carousel__line--show {
     background-color: var(--text-color-hover);
